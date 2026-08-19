@@ -405,9 +405,12 @@ export default function App() {
         </section>
 
         <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-4 shadow-soft sm:p-5">
-          <div className="grid gap-4 lg:grid-cols-[1fr_220px_220px]">
+          <div className="grid gap-4 lg:grid-cols-[1fr_220px_220px] items-end">
             <label className="relative block">
-              <span className="sr-only">Szukaj produktu</span>
+              <span className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-slate-500">
+    Szukaj produktu
+  </span>
+  <div className="relative">
               <Search
                 size={19}
                 className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"
@@ -419,6 +422,7 @@ export default function App() {
                 placeholder="Szukaj po nazwie produktu..."
                 className="w-full rounded-xl border border-slate-200 bg-slate-50 py-3 pl-11 pr-4 outline-none transition focus:border-slate-400 focus:bg-white focus:ring-4 focus:ring-slate-100"
               />
+              </div>
             </label>
 
             <label>
