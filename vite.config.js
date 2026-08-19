@@ -5,5 +5,5 @@ export default defineConfig({
   plugins: [react()],
   // Relative assets make the build work both locally and on GitHub Pages
   // without requiring the repository name to be hard-coded.
-  base: "./",
+  base: "/ceneo-widget",
 });
