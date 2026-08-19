@@ -1,0 +1,41 @@
+#zapisz-do-bazy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 10px 0;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #ff6b00, #ff8c00);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(255, 107, 0, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  z-index: 9999;
+}
+
+#zapisz-do-bazy-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(255, 107, 0, 0.45);
+}
+
+#zapisz-do-bazy-btn:active {
+  transform: translateY(0);
+}
+
+#zapisz-do-bazy-btn:disabled {
+  opacity: 0.7;
+  cursor: default;
+  transform: none;
+}
+
+#zapisz-do-bazy-btn.zdb-success {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+#zapisz-do-bazy-btn.zdb-error {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
